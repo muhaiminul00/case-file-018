@@ -191,6 +191,9 @@
   @media(min-width:600px){
     .exhibits{ grid-template-columns:1fr 1fr; }
   }
+  @media(min-width:900px){
+    .exhibits{ grid-template-columns:1fr 1fr 1fr; }
+  }
   .exhibit{
     background:var(--paper-2);
     border:1px solid var(--line);
@@ -214,6 +217,14 @@
     display:block;
     margin-bottom:8px;
   }
+  .redact{
+    background:var(--ink);
+    color:var(--ink);
+    border-radius:2px;
+    padding:0 3px;
+    text-shadow:none;
+  }
+  .redact::selection{ background:var(--ink); color:var(--paper); }
   .exhibit h3{
     font-family:'Cormorant Garamond', serif;
     font-weight:600;
@@ -383,15 +394,17 @@
 <section id="note">
   <div class="note">
     <p>Dear Isfah,</p>
-    <p>Eighteen years old, and this whole time you were quietly writing an entire novel in the gaps between everything else &mdash; and telling almost no one. I only found out because I went looking. I'm not sorry.</p>
-    <p>What you wrote is genuinely good. Not "good for a first try," not "good considering" &mdash; just good. I read the whole thing, and I'm still thinking about it, which is more than I can say for most books.</p>
+    <p>We don't actually share blood. Technically you're my best friend's cousin, which by most measures should make me a pretty distant relation. But somewhere between then and now, "technically" stopped meaning anything, and you just became my younger sister &mdash; someone who trusts me, tells me things, and gets looked out for whether she asked for it or not. I wanted to say that before anything else, because it's the truest thing in this whole letter.</p>
+    <p>Now for the less sentimental part &mdash; and the part that started this whole investigation. Eighteen years old, and this entire time you were quietly writing a full novel in the gaps between everything else, telling almost no one. I only found out because I went looking. I'm not sorry. And what you wrote is genuinely good &mdash; not "good for a first try," not "good considering" &mdash; just good. I read the whole thing, and I'm still thinking about it, which is more than I can say for most books.</p>
+    <p>18 is more than just a number &mdash; it's the start of a new chapter, with more freedom, more responsibility, and more chances to become exactly who you want to be. I hope you grow into someone confident in her choices, strong enough for the hard days, and wise enough to actually enjoy the good ones. Keep being yourself, keep dreaming big, and never let anyone &mdash; including you, on your worst day &mdash; convince you that you're not capable of something.</p>
+    <p>Welcome to adulthood. Dream bigger, laugh louder, make good choices (most of the time), and make these years genuinely unforgettable. No matter how old you get, you'll always have an older brother looking out for you.</p>
     <p>Happy birthday. I'm ridiculously proud of you.</p>
-    <p class="signoff">&mdash; filed with love, your brother</p>
+    <p class="signoff">&mdash; Farhan</p>
   </div>
 </section>
 
 <section id="evidence">
-  <p class="section-label">EXHIBITS A&ndash;D</p>
+  <p class="section-label">EXHIBITS A&ndash;F</p>
   <h2 class="section-title">Evidence Against the Suspect</h2>
   <div class="exhibits">
     <div class="exhibit">
@@ -413,6 +426,16 @@
       <span class="exhibit-tag">EXHIBIT D</span>
       <h3>The Witness, Evelyn</h3>
       <p>Told entirely from her point of view. Every reader is now contractually required to have strong opinions about her taste in men.</p>
+    </div>
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT E</span>
+      <h3>The Alias</h3>
+      <p>Legal name: Isfah. Author name: "Isfah Ribu." Motive for operating under a pen name: unconfirmed. This investigator suspects plausible deniability at family dinners.</p>
+    </div>
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT F</span>
+      <h3>The Scene(s) in Question</h3>
+      <p>Exact chapter numbers have been <span class="redact">REDACTED REDACTED REDACTED</span> at the family's request. Ask her yourself if you want them &mdash; and enjoy watching her deny everything.</p>
     </div>
   </div>
 </section>
